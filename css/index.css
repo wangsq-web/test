@@ -1,198 +1,42 @@
-/* 初始化 */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 12px;
-}
-a{
-  text-decoration: none;
-}
-ul{
-  list-style: none;
-}
-h5{
-  background: #eee;
-  line-height: 28px;
-  padding-left: 8px;
-}
-body{
-  width: 100%;
-  height: 100;
-  background: url(../images/bg.gif);
-}
-/* 头部 */
-header{
-  height: 314px;
-  width: 1000px;
-  background: url(../images/banner.jpg);
-  margin: 0 auto;
-  padding-top: 286px;
-}
-nav{
-  height: 28px;
-  width: 1000px;
-  /* background: url(../images/menu_divider.jpg) repeat-x; */
-}
-nav ul{
-  height: 28px;
-}
-nav li{
-  float: left;
-  line-height: 28px;
-  padding: 0 10px;
-}
-/* 上下的中间 */
-.content{
-  width: 1000px;
-  height: 657px;
-  margin: 0 auto;
-  padding-top: 36px;
-  padding-bottom: 10px;
-  background: url(../images/body_bg.jpg) repeat-x;
-}
-.content >div{
-  float: left;
-  height: 100%;
-}
-/* 左边 */
-.content .left{
-  width: 262px;
-  padding: 0 34px;
-}
-.content .left >div{
-  width: 100%;
-  border: 1px solid #999;
-}
-.content .left .top{
-  height: 440px;
-}
-.content .left .top >img{
-  width: 180px;
-  height: 180px;
-  margin: 10px 6px;
-  box-shadow: 0 0 10px #999;
-}
-.content .left .top .con{
-  text-align: center;
-  margin-bottom: 14px;
-}
-.content .left .top .btn{
-  border-top: 1px dashed #999;
-  border-bottom: 1px dashed #999;
-  width: 166px;
-  margin: 0 auto;
-  padding: 15px 6px;
+
+.banner{
+  width: 500%;
+  height: 520px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 12px;
+  animation: ss 16s infinite;
 }
-.content .left .top .btn button{
-  width: 58px;
-  height: 20px;
-  line-height: 20px;
-  border: 1px solid #009;
-}
-.content .left .top .it{
-  padding-left: 10px;
-  line-height: 16px;
-}
-.content .left .bottom{
-  height: 166px;
-  margin-top: 5px;
-  padding-right: 5px;
-}
-.content .left .bottom ul{
-  margin-top: 10px;
-}
-.content .left .bottom ul li{
-  padding-left: 10px;
-  line-height: 24px;
-  background: url(../images/mid_menu_active1.jpg);
-  border-bottom: 1px dashed #030;
-}
-.content .left .bottom ul li:last-child{
-  border: none;
-}
-
-/* 中间 */
-.content .conter{
-  width: 444px;
-  border-left: 1px #999 dashed;
-  border-right: 1px #999 dashed;
-}
-.content .conter .list{
-  padding: 0 58px 0 32px;
-}
-.content .conter .list h3{
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-.content .conter .list h3 span{
-  font-size: 12px;
-  color: #999;
-  margin-left: 10px;
-}
-.content .conter .list h4{
-  margin-bottom: 15px;
-}
-.content .conter .list button{
-  width: 81px;
-  height: 16px;
-  border: 1px solid #999;
-  margin-left: 250px;
-  margin-top: 15px;
-  margin-bottom: 35px;
-}
-
-/* 右边 */
-.content .right{
-  width: 292px;
-  padding: 0 42px 0 30px;
-}
-.content .right >div{
-  border: 1px solid #999;
+.photo{
+  width: 20%;
   height: 100%;
+  background: url(../images/banner/yirenzhixia.jpg) no-repeat;
+  background-size: cover;
 }
-.content .right >div img{
-  margin: 10px 10px 0;
+.photo.t-2{
+  background: url(../images/banner/changgexing.jpg) no-repeat;
+  background-size: cover;
 }
-.content .right p{
-  text-align: center;
+.photo.t-3{
+  background: url(../images/banner/xianqiong.jpg) no-repeat;
+  background-size: cover;
 }
-.content .right button{
-  width: 73px;
-  height: 16px;
-  border: 1px solid #999;
-  margin-top: 28px;
-  margin-left: 120px;
+.photo.t-4{
+  background: url(../images/banner/ashuai.jpg) no-repeat;
+  background-size: cover;
 }
-
-/* 底部 */
-footer{
-  background: url(../images/fotter.jpg) repeat-x;
-  height: 128px;
-  width: 1000px;
-  margin: 0 auto;
-  padding-top: 26px;
-  text-align: center;
+.photo.t-5{
+  background: url(../images/banner/kenan.jpg) no-repeat;
+  background-size: cover;
 }
-footer ul{
-  width: 200px;
-  height: 20px;
-  margin: 0 auto 5px;
-}
-footer ul li{
-  float: left;
-}
-footer ul li.lis{
-  padding: 0 10px;
-}
-footer button{
-  margin-top: 8px;
-  width: 62px;
-  height: 20px;
-  display: inline-block;
+@keyframes ss{
+  0%{margin-left: 0; }
+  15%{margin-left: 0; }
+  21%{margin-left: -100%; }
+  36%{margin-left: -100%; }
+  42%{margin-left: -200%; }
+  57%{margin-left: -200%; }
+  63%{margin-left: -300%; }
+  78%{margin-left: -300%; }
+  84%{margin-left: -400%; }
+  94%{margin-left: -400%; }
+  100%{margin-left: 0;}
 }
